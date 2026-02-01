@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Baloo+2:wght@500;600;700;800&display=swap');
+
+:root {
+  --pink: #FF6B8A;
+  --pink-dark: #E85A78;
+  --pink-light: #FFE4E9;
+  --peach: #FFCBA4;
+  --peach-light: #FFE5D0;
+  --white: #FFFFFF;
+  --cream: #FFF9F5;
+  --text-dark: #4A3540;
+  --text-light: #8B7080;
+  --heart-red: #FF4D6D;
+  --shadow-pink: rgba(255, 107, 138, 0.3);
+  --shadow-soft: rgba(74, 53, 64, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(145deg, var(--cream) 0%, var(--pink-light) 50%, var(--peach-light) 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  color: var(--text-dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+::selection {
+  background: var(--pink);
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
