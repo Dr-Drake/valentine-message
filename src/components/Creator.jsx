@@ -161,20 +161,21 @@ const Creator = ({ onGenerate }) => {
 const styles = {
   container: {
     width: '100%',
-    minHeight: '100vh',
+    minHeight: 'auto',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    padding: '20px',
+    padding: '0',
   },
   card: {
     background: 'rgba(255, 255, 255, 0.9)',
     backdropFilter: 'blur(20px)',
     borderRadius: '24px',
-    padding: '40px 35px',
+    padding: '32px 24px',
     maxWidth: '480px',
     width: '100%',
     boxShadow: '0 20px 60px rgba(255, 107, 138, 0.15)',
+    margin: 'auto',
   },
   iconContainer: {
     fontSize: '48px',

@@ -21,8 +21,7 @@ const Mascot = ({ isHappy = false, isExcited = false }) => {
       }}
     >
       <svg
-        width="180"
-        height="180"
+        style={styles.svg}
         viewBox="0 0 180 180"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -216,6 +215,10 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     filter: 'drop-shadow(0 10px 30px rgba(255, 107, 138, 0.3))',
+  },
+  svg: {
+    width: 'clamp(120px, 30vw, 180px)',
+    height: 'clamp(120px, 30vw, 180px)',
   },
 };
 

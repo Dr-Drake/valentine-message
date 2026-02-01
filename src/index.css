@@ -22,9 +22,23 @@
 }
 
 html, body, #root {
-  height: 100%;
+  min-height: 100%;
+  min-height: 100dvh;
   width: 100%;
-  overflow: hidden;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#root {
+  overflow: visible;
 }
 
 body {
